@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	const BASE = 'http://localhost:8080';
+	const BASE = 'https://http-todo-app-0904.herokuapp.com';
 
 	function getTodos() {
 		let item;

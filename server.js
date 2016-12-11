@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 var todos = [];
@@ -42,6 +43,6 @@ app.delete('/todos',function(req,res) {
 	}
 });
 
-app.listen(8080,function() {
-	console.log('Server running at http://localhost:8080');
+app.listen(PORT,function() {
+	console.log('Server running at port ' + PORT);
 });

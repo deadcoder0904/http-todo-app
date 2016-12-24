@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	const BASE = 'https://http-todo-app-0904.herokuapp.com';
+	const BASE = 'http://http-todo-app-0904.herokuapp.com';
 
 	function getTodos() {
 		let item;
@@ -17,6 +17,7 @@ $(document).ready(function() {
 		fetch(`${BASE}/todos`, {
 	    method: 'post',
 	    headers: {
+	    	'Access-Control-Allow-Origin':'*',
 	      "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
 	    },
 	    body: `name=${text}`
@@ -38,6 +39,7 @@ $(document).ready(function() {
 		fetch(`${BASE}/todos`, {
 	    method: 'delete',
 	    headers: {
+	    	'Access-Control-Allow-Origin':'*',
 	      "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
 	    },
 	    body: `name=${val.innerHTML.trim()}`

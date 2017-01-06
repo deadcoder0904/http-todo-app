@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	const BASE = 'http://http-todo-app-0904.herokuapp.com';
+	const BASE = 'https://http-todo-app-0904.herokuapp.com';
 
 	function getTodos() {
 		let item;
